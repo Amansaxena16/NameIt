@@ -1,8 +1,14 @@
-function Input(){
+import '../global.css'
+
+function Input({onInputChange}){
+
+    function onTyping(inputText){
+        onInputChange(inputText)
+    }
     return (
         <>
             <div className="text-center my-10">
-                <input type="text" className="w-96 h-10 rounded-2xl"/>
+                <input type="text" placeholder="Type Keywords here..." className="input" onChange={(e)=> {onTyping(e.target.value)}}/>
             </div>
         </>
     )
