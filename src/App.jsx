@@ -1,4 +1,4 @@
-import Logo from './components/logo/logo'
+import Logo from './components/logo/Logo'
 import Input from './components/input/Input'
 import ResultCard from './components/resultCard/Result'
 import { useState } from 'react'
