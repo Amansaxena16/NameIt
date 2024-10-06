@@ -2,12 +2,15 @@
   "name": "nameit",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://Amansaxena16.github.io/NameIt/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@rstacruz/startup-name-generator": "^0.3.0",
