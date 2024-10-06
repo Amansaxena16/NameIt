@@ -11,7 +11,7 @@ function App() {
   }
   return (
     <>
-      <Logo width={inputValue.trim() === '' ? '20rem': '10rem'}/>
+      <Logo width={inputValue.trim() === '' ? '28rem': '10rem'}/>
       <Input onInputChange={handleWidth}/>
       <ResultCard keyword={inputValue}/>
     </>

@@ -7,30 +7,24 @@ function ResultCard({ keyword }) {
     if(keyword.length > 0){
         suggestName = nameGenerator(keyword)
     }
-    // console.log(suggestName[2]);
 
     let words = []
     for(let i = 0; i<suggestName.length; i++){
         words.push(<li className='text-white'>{suggestName[i]}</li>);
     }
-    // console.log(words[4]);
     
     
     return (
-        <div>
-            <ul>
-                {/* {suggestName.map((word, index) => (
-                    <li key={index} className='text-white'>{word}</li>
-                    ))} */}
-                {/* {() => {
-                    for(let i = 0; i<suggestName.length; i++){
-                        <li key={i} className='text-white'>{suggestName[i]}</li>
-                    }
-                }} */}
-                {words}
+        <div className='mb-20'>
+            <ul className='ul'>
+                {suggestName.map((word, index) => (
+                    <a href="#">
+                        <li key={index} className='li'>{word}</li>
+                    </a>
+                    ))}
             </ul>
         </div>
-    );
+);
 }
 
 export default ResultCard;

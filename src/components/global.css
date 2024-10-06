@@ -1,3 +1,11 @@
 .input{
     @apply w-96 h-10 rounded-2xl placeholder:italic placeholder:text-white border border-slate-300 py-2 pl-3 pr-3 bg-[rgb(149,132,218)] focus:outline-none shadow-[0px_0px_4px_white] text-white
 }
+
+.ul {
+    @apply grid grid-cols-4 text-center gap-y-6
+}
+
+.li {
+    @apply text-3xl text-white font-thin text-opacity-100 transition-opacity duration-500 ease-out hover:opacity-100 hover:drop-shadow-2xl
+}
