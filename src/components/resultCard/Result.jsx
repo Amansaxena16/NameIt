@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import nameGenerator from '@rstacruz/startup-name-generator'; 
 
+const url = 'https://www.namecheap.com/domains/registration/results/?domain='
+
 function ResultCard({ keyword }) {
     let suggestName = []
 
@@ -17,8 +19,11 @@ function ResultCard({ keyword }) {
     return (
         <div className='mb-20'>
             <ul className='ul'>
+                <a href={`${url}${keyword}`}>
+                    <li className='li'>{keyword}</li>
+                </a>
                 {suggestName.map((word, index) => (
-                    <a href="#">
+                    <a href={`${url}${word}`}>
                         <li key={index} className='li'>{word}</li>
                     </a>
                     ))}
